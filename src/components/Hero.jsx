@@ -156,10 +156,10 @@ export function Hero({
         </div>
       </div>
 
-      {/* Bottom Features & Tagline Bar (Exact match to screenshot bottom) */}
+      {/* Bottom Features & Tagline Bar */}
       <div className="mx-auto max-w-7xl w-full pt-8 mt-4 border-t border-white/[0.06] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 z-10">
-        {/* Left: 3 Feature Items */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-10 w-full md:w-auto">
+        {/* Left: 2 Feature Items */}
+        <div className="flex flex-wrap items-center gap-8 sm:gap-14 w-full md:w-auto">
           {/* Feature 1: Fast */}
           <div className="flex items-center gap-3">
             <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-red-500/30 bg-red-950/30 text-[#ef4444] shadow-[0_0_12px_rgba(239,68,68,0.25)]">
@@ -179,17 +179,6 @@ export function Hero({
             <div>
               <h4 className="text-sm font-semibold text-white tracking-normal">Simple</h4>
               <p className="text-xs text-zinc-400 tracking-normal">Just paste & create</p>
-            </div>
-          </div>
-
-          {/* Feature 3: Reliable */}
-          <div className="flex items-center gap-3">
-            <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-red-500/30 bg-red-950/30 text-[#ef4444] shadow-[0_0_12px_rgba(239,68,68,0.25)]">
-              <ShieldCheck size={16} className="stroke-red-500" />
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold text-white tracking-normal">Reliable</h4>
-              <p className="text-xs text-zinc-400 tracking-normal">Works on any device</p>
             </div>
           </div>
         </div>

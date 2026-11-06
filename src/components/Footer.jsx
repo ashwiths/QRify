@@ -31,9 +31,15 @@ export function Footer() {
             
             <p className="text-xs text-zinc-400 font-light">
               A minimalist, privacy-first utility engineered by{' '}
-              <span className="font-semibold text-white tracking-tight">
+              <a
+                href="https://savee.space"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white tracking-tight hover:text-red-400 transition-colors inline-flex items-baseline"
+                title="Visit AAA isolutions on savee.space"
+              >
                 AAA isolutions<span className="text-[#ef4444]">.</span>
-              </span>
+              </a>
             </p>
           </div>
 
@@ -59,7 +65,16 @@ export function Footer() {
         {/* Bottom Colophon line */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-zinc-400">
           <div>
-            © {new Date().getFullYear()} QRify. Conceived & Powered by <strong className="text-zinc-300">AAA isolutions.</strong>
+            © {new Date().getFullYear()} QRify. Conceived & Powered by{' '}
+            <a
+              href="https://savee.space"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-300 hover:text-white transition-colors font-bold inline-flex items-baseline"
+              title="Visit AAA isolutions on savee.space"
+            >
+              AAA isolutions<span className="text-[#ef4444]">.</span>
+            </a>
           </div>
           <div>
             ISO/IEC 18004 COMPLIANT • REED-SOLOMON ALGORITHM • NO COOKIES
