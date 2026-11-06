@@ -147,9 +147,15 @@ export function GeneratorDrawer({
             <div>
               <h2 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 QRify Studio
-                <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/20 text-red-400 border border-red-500/30">
-                  AAA isolutions
-                </span>
+                <a
+                  href="https://savee.space"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold px-2 py-0.5 rounded-full bg-red-500/20 text-red-400 border border-red-500/30 hover:bg-red-500/30 transition-colors inline-flex items-baseline"
+                  title="Visit AAA isolutions on savee.space"
+                >
+                  AAA isolutions<span className="text-[#ef4444]">.</span>
+                </a>
               </h2>
               <p className="text-xs text-zinc-400">Configure content, styling, and export high-resolution assets</p>
             </div>

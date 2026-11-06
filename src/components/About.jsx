@@ -54,9 +54,15 @@ export function About() {
 
           <div className="flex items-center gap-2 text-xs font-mono text-zinc-400">
             <span>AN</span>
-            <span className="font-bold text-white tracking-wide">
+            <a
+              href="https://savee.space"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-white tracking-wide hover:text-red-400 transition-colors inline-flex items-baseline"
+              title="Visit AAA isolutions on savee.space"
+            >
               AAA isolutions<span className="text-[#ef4444]">.</span>
-            </span>
+            </a>
             <span>INITIATIVE</span>
           </div>
         </div>
@@ -149,9 +155,15 @@ export function About() {
                 </div>
                 <div className="flex items-center justify-between text-zinc-400">
                   <span>AUTHORED BY:</span>
-                  <span className="text-white font-bold">
+                  <a
+                    href="https://savee.space"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-bold hover:text-red-400 transition-colors inline-flex items-baseline"
+                    title="Visit AAA isolutions on savee.space"
+                  >
                     AAA isolutions<span className="text-[#ef4444]">.</span>
-                  </span>
+                  </a>
                 </div>
               </div>
 
@@ -206,12 +218,19 @@ export function About() {
               </span>
 
               {/* Exact AAA isolutions. Wordmark matching uploaded logo */}
-              <div className="inline-flex items-baseline tracking-[0.02em]">
-                <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-[0.02em] font-sans">
+              <a
+                href="https://savee.space"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-baseline tracking-[0.02em] group/brand hover:opacity-95 transition-opacity"
+                title="Visit AAA isolutions on savee.space"
+              >
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-[0.02em] font-sans group-hover/brand:text-red-50 transition-colors">
                   AAA isolutions
                 </span>
                 <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#ef4444] ml-1">.</span>
-              </div>
+                <ArrowUpRight size={22} className="text-zinc-500 ml-2 group-hover/brand:text-red-400 transition-colors" />
+              </a>
 
               <p className="text-sm sm:text-base text-zinc-400 leading-relaxed max-w-xl font-normal tracking-[0.02em] pt-2">
                 A modern digital engineering and product studio dedicated to crafting purposeful software, high-performance web experiences, and minimalist developer utilities.
