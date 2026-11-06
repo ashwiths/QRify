@@ -6,6 +6,7 @@ import { Features } from './components/Features'
 import { HowItWorks } from './components/HowItWorks'
 import { About } from './components/About'
 import { Footer } from './components/Footer'
+import { BottomNav } from './components/BottomNav'
 import { CheckCircle2, Download } from 'lucide-react'
 
 export function App() {
@@ -138,6 +139,13 @@ export function App() {
         {/* About Section */}
         <About />
       </main>
+
+      {/* Floating Bottom Navigation Bar */}
+      <BottomNav
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+        onOpenGenerator={() => setIsGeneratorOpen(true)}
+      />
 
       {/* Footer */}
       <Footer />

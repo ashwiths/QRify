@@ -155,4 +155,101 @@ export function About() {
                 </div>
               </div>
 
- 
+              {/* Bottom Pill Badge */}
+              <div className="mt-5 pt-4 border-t border-white/10 flex items-center justify-between">
+                <span className="text-[10px] font-mono text-zinc-400 tracking-wider uppercase">
+                  VERIFIED STATIC ASSET
+                </span>
+                <span className="inline-flex items-center gap-1 text-[11px] text-red-400 font-medium">
+                  <ShieldCheck size={13} />
+                  Safe To Scan
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Savee-Style Bento / Principles Grid with spacious tracking */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mb-20">
+          {principles.map((item, idx) => (
+            <div
+              key={idx}
+              className="group relative rounded-2xl border border-white/[0.08] bg-[#0c0d14]/70 p-8 sm:p-10 backdrop-blur-sm transition-all duration-300 hover:border-red-500/40 hover:bg-[#10121c] hover:shadow-[0_0_30px_rgba(239,68,68,0.1)]"
+            >
+              <div className="flex items-center justify-between pb-6 border-b border-white/[0.06] mb-6">
+                <span className="font-mono text-xl font-bold text-red-500/90 tracking-[0.08em]">
+                  {item.num}
+                </span>
+                <span className="font-mono text-[11px] font-semibold tracking-[0.25em] text-zinc-400 uppercase">
+                  {item.tag}
+                </span>
+              </div>
+
+              <h3 className="text-xl sm:text-2xl font-bold text-white tracking-[0.03em] group-hover:text-red-400 transition-colors">
+                {item.title}
+              </h3>
+
+              <p className="mt-4 text-sm sm:text-base text-zinc-400 leading-relaxed font-normal tracking-[0.02em]">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Studio Colophon: AAA isolutions. Showcase */}
+        <div className="rounded-3xl border border-white/[0.1] bg-gradient-to-br from-[#12131d]/90 via-[#0e0f17]/95 to-[#08090e] p-8 sm:p-12 shadow-[0_0_50px_rgba(0,0,0,0.8)]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Left: Studio Identity */}
+            <div className="lg:col-span-7 space-y-4">
+              <span className="font-mono text-xs uppercase tracking-[0.25em] text-zinc-400 block">
+                CONCEIVED & ENGINEERED BY
+              </span>
+
+              {/* Exact AAA isolutions. Wordmark matching uploaded logo */}
+              <div className="inline-flex items-baseline tracking-[0.02em]">
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-[0.02em] font-sans">
+                  AAA isolutions
+                </span>
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#ef4444] ml-1">.</span>
+              </div>
+
+              <p className="text-sm sm:text-base text-zinc-400 leading-relaxed max-w-xl font-normal tracking-[0.02em] pt-2">
+                A modern digital engineering and product studio dedicated to crafting purposeful software, high-performance web experiences, and minimalist developer utilities.
+              </p>
+
+              <div className="pt-2 flex flex-wrap items-center gap-3">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1 text-xs text-zinc-300 tracking-[0.02em]">
+                  <Check size={13} className="text-red-500" />
+                  Independent Utility
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1 text-xs text-zinc-300 tracking-[0.02em]">
+                  <Check size={13} className="text-red-500" />
+                  Zero Third-Party Trackers
+                </span>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3.5 py-1 text-xs text-zinc-300 tracking-[0.02em]">
+                  <Check size={13} className="text-red-500" />
+                  Free & Open
+                </span>
+              </div>
+            </div>
+
+            {/* Right: Studio Manifesto Quote */}
+            <div className="lg:col-span-5 lg:border-l lg:border-white/[0.08] lg:pl-8">
+              <blockquote className="space-y-4">
+                <p className="text-lg sm:text-xl font-medium text-white tracking-[0.02em] italic leading-relaxed">
+                  "Good design isn't about how much you can add, but how gracefully the tool gets out of your way."
+                </p>
+                <footer className="flex items-center gap-3 pt-2">
+                  <div className="size-2 rounded-full bg-red-500 shadow-[0_0_8px_#ef4444]" />
+                  <span className="font-mono text-xs uppercase tracking-[0.2em] text-zinc-400">
+                    AAA isolutions Product Philosophy
+                  </span>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

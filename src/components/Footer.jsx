@@ -7,7 +7,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="relative border-t border-white/[0.08] bg-[#050608] px-6 py-14 sm:px-12 lg:px-20 text-zinc-400">
+    <footer className="relative border-t border-white/[0.08] bg-[#050608] px-6 pt-14 pb-28 sm:px-12 lg:px-20 text-zinc-400">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-10 border-b border-white/[0.06]">
           {/* Brand & Studio Attribution */}

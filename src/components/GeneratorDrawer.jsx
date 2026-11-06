@@ -233,6 +233,34 @@ export function GeneratorDrawer({
                       className="w-full bg-transparent text-sm text-white placeholder-zinc-500 outline-none"
                     />
                   </div>
+
+                  <div className="mt-2 flex flex-wrap items-center gap-1.5 text-[11px] text-zinc-400">
+                    <span className="font-mono text-zinc-500">Presets:</span>
+                    <button
+                      onClick={() => setQrValue('https://wa.me/')}
+                      className="px-2 py-0.5 rounded-md bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white"
+                    >
+                      WhatsApp
+                    </button>
+                    <button
+                      onClick={() => setQrValue('https://instagram.com/')}
+                      className="px-2 py-0.5 rounded-md bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white"
+                    >
+                      Instagram
+                    </button>
+                    <button
+                      onClick={() => setQrValue('https://github.com/')}
+                      className="px-2 py-0.5 rounded-md bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white"
+                    >
+                      GitHub
+                    </button>
+                    <button
+                      onClick={() => setQrValue('https://qrify.tools')}
+                      className="px-2 py-0.5 rounded-md bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white"
+                    >
+                      Reset Default
+                    </button>
+                  </div>
                 </div>
               )}
 

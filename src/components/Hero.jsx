@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArrowRight, Zap, Link2, ShieldCheck, Sparkles, Check, Download, SlidersHorizontal } from 'lucide-react'
+import { ArrowRight, Zap, Link2, Sparkles, Check, Download, SlidersHorizontal } from 'lucide-react'
 import { QRCard3D } from './QRCard3D'
 
 export function Hero({

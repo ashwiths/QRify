@@ -118,3 +118,4 @@ export function BottomNav({ activeSection, setActiveSection, onOpenGenerator }) 
     </aside>
   )
 }
+
